@@ -1,0 +1,105 @@
+@import url('https://fonts.cdnfonts.com/css/salsa');
+@import url('https://fonts.googleapis.com/css?family=Cookie');
+@import url(https://db.onlinewebfonts.com/c/df6661ea8e32901509b9a437fff6cfaf?family=Reckless+Neue+Light);
+
+:root {
+  --keyboard-gap: 5px;
+  --pad-button-size: 70px;
+  --pad-button-font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #111;
+  color: #eee;
+  padding-bottom: 100px;
+}
+
+p#title {
+  font-family: 'Salsa', Impact, sans-serif;
+  font-size: 35px;
+  margin: 20px;
+}
+
+#drum-machine {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 60px;
+  border: solid;
+  gap: 40px;
+}
+
+#keyboard {
+  display: grid;
+  grid-template-columns: repeat(3, var(--pad-button-size));
+  grid-auto-rows: var(--pad-button-size);
+  gap: var(--keyboard-gap);
+}
+
+#keyboard .drum-pad {
+  font-size: var(--pad-button-font-size);
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: orange;
+  color: #eee;
+  background-color: #111;
+}
+
+#keyboard .drum-pad:active {
+  color: #111;
+  background-color: orange;
+}
+
+#display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20vh;
+  padding-bottom: 20px;
+}
+
+#display #display-title {
+  font-size: 20px;
+  font-family: 'Salsa', "Times New Roman", Times, serif;
+}
+
+#display #display-value {
+  font-size: 18px;
+  font-family: 'Reckless Neue Light', "Times New Roman", Times, serif;
+  font-weight: bold;
+  background-color: #ccc;
+  color: #111;
+  width: 80%;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+footnote {
+  padding: 10px;
+  font-family: 'Courier New';
+  font-size: 18px;
+}
+
+footnote a {
+  font-family: 'Cookie';
+  font-size: 25px;
+  color: #eee;
+  text-decoration: none;
+}
+
+footnote a:hover {
+  color: orange;
+}
